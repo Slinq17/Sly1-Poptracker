@@ -1,0 +1,415 @@
+[
+  {
+    "name": "Hideout",
+    "children": [
+      {
+        "name": "Paris",
+        "sections": [
+          {
+            "name": "Paris Files",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hideout",
+            "x": 500,
+            "y": 850
+          }
+        ]
+      },
+      {
+        "name": "Tide of Terror",
+        "access_rules": ["tide_of_terror"],
+        "sections": [
+          {
+            "name": "Stealthy Approach Key",
+            "ref": "Tide of Terror/Stealthy Approach/Key"
+          },
+          {
+            "name": "Stealthy Approach Bottles",
+            "ref": "Tide of Terror/Stealthy Approach/Bottles"
+          },
+          {
+            "name": "Stealthy Approach Vault",
+            "ref": "Tide of Terror/Stealthy Approach/Vault"
+          },
+          {
+            "name": "Stealthy Approach Hourglass",
+            "ref": "Tide of Terror/Stealthy Approach/Hourglass"
+          },
+          {
+            "name": "Into the Machine Key",
+            "ref": "Tide of Terror/Into the Machine/Key"
+          },
+          {
+            "name": "Into the Machine Bottles",
+            "ref": "Tide of Terror/Into the Machine/Bottles"
+          },
+          {
+            "name": "Into the Machine Vault",
+            "ref": "Tide of Terror/Into the Machine/Vault"
+          },
+          {
+            "name": "Into the Machine Hourglass",
+            "ref": "Tide of Terror/Into the Machine/Hourglass"
+          },
+          {
+            "name": "High Class Heist Key",
+            "ref": "Tide of Terror/High Class Heist/Key"
+          },
+          {
+            "name": "High Class Heist Bottles",
+            "ref": "Tide of Terror/High Class Heist/Bottles"
+          },
+          {
+            "name": "High Class Heist Vault",
+            "ref": "Tide of Terror/High Class Heist/Vault"
+          },
+          {
+            "name": "High Class Heist Hourglass",
+            "ref": "Tide of Terror/High Class Heist/Hourglass"
+          },
+          {
+            "name": "Fire Down Below Key",
+            "ref": "Tide of Terror/Fire Down Below/Key"
+          },
+          {
+            "name": "Fire Down Below Bottles",
+            "ref": "Tide of Terror/Fire Down Below/Bottles"
+          },
+          {
+            "name": "Fire Down Below Vault",
+            "ref": "Tide of Terror/Fire Down Below/Vault"
+          },
+          {
+            "name": "Fire Down Below Hourglass",
+            "ref": "Tide of Terror/Fire Down Below/Hourglass"
+          },
+          {
+            "name": "Cunning Disguise Key",
+            "ref": "Tide of Terror/Cunning Disguise/Key"
+          },
+          {
+            "name": "Cunning Disguise Bottles",
+            "ref": "Tide of Terror/Cunning Disguise/Bottles"
+          },
+          {
+            "name": "Cunning Disguise Vault",
+            "ref": "Tide of Terror/Cunning Disguise/Vault"
+          },
+          {
+            "name": "Cunning Disguise Hourglass",
+            "ref": "Tide of Terror/Cunning Disguise/Hourglass"
+          },
+          {
+            "name": "Gunboat Graveyard Key",
+            "ref": "Tide of Terror/Gunboat Graveyard/Key"
+          },
+          {
+            "name": "Gunboat Graveyard Bottles",
+            "ref": "Tide of Terror/Gunboat Graveyard/Bottles"
+          },
+          {
+            "name": "Gunboat Graveyard Vault",
+            "ref": "Tide of Terror/Gunboat Graveyard/Vault"
+          },
+          {
+            "name": "Gunboat Graveyard Hourglass",
+            "ref": "Tide of Terror/Gunboat Graveyard/Hourglass"
+          },
+          {
+            "name": "Treasure in the Depths Key",
+            "ref": "Tide of Terror/Treasure in the Depths/Key"
+          },
+          {
+            "name": "Eye of the Storm",
+            "ref": "Tide of Terror/Eye of the Storm/Raleigh"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hideout",
+            "x": 250,
+            "y": 650
+          }
+        ]
+      },
+      {
+        "name": "Sunset Snake Eyes",
+        "access_rules": ["sunset_snake_eyes"],
+        "sections": [
+          {
+            "name": "Rocky Start Key",
+            "ref": "Sunset Snake Eyes/Rocky Start/Key"
+          },
+          {
+            "name": "Rocky Start Bottles",
+            "ref": "Sunset Snake Eyes/Rocky Start/Bottles"
+          },
+          {
+            "name": "Rocky Start Vault",
+            "ref": "Sunset Snake Eyes/Rocky Start/Vault"
+          },
+          {
+            "name": "Rocky Start Hourglass",
+            "ref": "Sunset Snake Eyes/Rocky Start/Hourglass"
+          },
+          {
+            "name": "Boneyard Casino Key",
+            "ref": "Sunset Snake Eyes/Boneyard Casino/Key"
+          },
+          {
+            "name": "Boneyard Casino Bottles",
+            "ref": "Sunset Snake Eyes/Boneyard Casino/Bottles"
+          },
+          {
+            "name": "Boneyard Casino Vault",
+            "ref": "Sunset Snake Eyes/Boneyard Casino/Vault"
+          },
+          {
+            "name": "Boneyard Casino Hourglass",
+            "ref": "Sunset Snake Eyes/Boneyard Casino/Hourglass"
+          },
+          {
+            "name": "At the Dog Track Key",
+            "ref": "Sunset Snake Eyes/At the Dog Track/Key"
+          },
+          {
+            "name": "Murray's Big Gamble Key",
+            "ref": "Sunset Snake Eyes/Murray's Big Gamble/Key"
+          },
+          {
+            "name": "Straight to the Top Key",
+            "ref": "Sunset Snake Eyes/Straight to the Top/Key"
+          },
+          {
+            "name": "Straight to the Top Bottles",
+            "ref": "Sunset Snake Eyes/Straight to the Top/Bottles"
+          },
+          {
+            "name": "Straight to the Top Vault",
+            "ref": "Sunset Snake Eyes/Straight to the Top/Vault"
+          },
+          {
+            "name": "Straight to the Top Hourglass",
+            "ref": "Sunset Snake Eyes/Straight to the Top/Hourglass"
+          },
+          {
+            "name": "Two to Tango Key",
+            "ref": "Sunset Snake Eyes/Two to Tango/Key"
+          },
+          {
+            "name": "Two to Tango Bottles",
+            "ref": "Sunset Snake Eyes/Two to Tango/Bottles"
+          },
+          {
+            "name": "Two to Tango Vault",
+            "ref": "Sunset Snake Eyes/Two to Tango/Vault"
+          },
+          {
+            "name": "Two to Tango Hourglass",
+            "ref": "Sunset Snake Eyes/Two to Tango/Hourglass"
+          },
+          {
+            "name": "Back Alley Heist Key",
+            "ref": "Sunset Snake Eyes/Back Alley Heist/Key"
+          },
+          {
+            "name": "Back Alley Heist Bottles",
+            "ref": "Sunset Snake Eyes/Back Alley Heist/Bottles"
+          },
+          {
+            "name": "Back Alley Heist Vault",
+            "ref": "Sunset Snake Eyes/Back Alley Heist/Vault"
+          },
+          {
+            "name": "Back Alley Heist Hourglass",
+            "ref": "Sunset Snake Eyes/Back Alley Heist/Hourglass"
+          },
+          {
+            "name": "Last Call",
+            "ref": "Sunset Snake Eyes/Last Call/Muggshot"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hideout",
+            "x": 250,
+            "y": 350
+          }
+        ]
+      },
+      {
+        "name": "Vicious Voodoo",
+        "access_rules": ["vicious_voodoo"],
+        "sections": [
+          {
+            "name": "Dread Swamp Path Key",
+            "ref": "Vicious Voodoo/Dread Swamp Path/Key"
+          },
+          {
+            "name": "Dread Swamp Path Bottles",
+            "ref": "Vicious Voodoo/Dread Swamp Path/Bottles"
+          },
+          {
+            "name": "Dread Swamp Path Vault",
+            "ref": "Vicious Voodoo/Dread Swamp Path/Vault"
+          },
+          {
+            "name": "Dread Swamp Path Hourglass",
+            "ref": "Vicious Voodoo/Dread Swamp Path/Hourglass"
+          },
+          {
+            "name": "Lair of the Beast Key",
+            "ref": "Vicious Voodoo/Lair of the Beast/Key"
+          },
+          {
+            "name": "Lair of the Beast Bottles",
+            "ref": "Vicious Voodoo/Lair of the Beast/Bottles"
+          },
+          {
+            "name": "Lair of the Beast Vault",
+            "ref": "Vicious Voodoo/Lair of the Beast/Vault"
+          },
+          {
+            "name": "Lair of the Beast Hourglass",
+            "ref": "Vicious Voodoo/Lair of the Beast/Hourglass"
+          },
+          {
+            "name": "Grave Undertaking Key",
+            "ref": "Vicious Voodoo/Grave Undertaking/Key"
+          },
+          {
+            "name": "Grave Undertaking Bottles",
+            "ref": "Vicious Voodoo/Grave Undertaking/Bottles"
+          },
+          {
+            "name": "Grave Undertaking Vault",
+            "ref": "Vicious Voodoo/Grave Undertaking/Vault"
+          },
+          {
+            "name": "Grave Undertaking Hourglass",
+            "ref": "Vicious Voodoo/Grave Undertaking/Hourglass"
+          },
+          {
+            "name": "Pirhana Lake Key",
+            "ref": "Vicious Voodoo/Pirhana Lake/Key"
+          },
+          {
+            "name": "Down Home Cooking Key",
+            "ref": "Vicious Voodoo/Down Home Cooking/Key"
+          },
+          {
+            "name": "Ghastly Voyage Key",
+            "ref": "Vicious Voodoo/Ghastly Voyage/Key"
+          },
+          {
+            "name": "Descent Into Danger Key",
+            "ref": "Vicious Voodoo/Descent Into Danger/Key"
+          },
+          {
+            "name": "Descent Into Danger Bottles",
+            "ref": "Vicious Voodoo/Descent Into Danger/Bottles"
+          },
+          {
+            "name": "Descent Into Danger Vault",
+            "ref": "Vicious Voodoo/Descent Into Danger/Vault"
+          },
+          {
+            "name": "Descent Into Danger Hourglass",
+            "ref": "Vicious Voodoo/Descent Into Danger/Hourglass"
+          },
+          {
+            "name": "Deadly Dance",
+            "ref": "Vicious Voodoo/Deadly Dance/Ms. Ruby"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hideout",
+            "x": 500,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Fire in the Sky",
+        "access_rules": ["fire_in_the_sky"],
+        "sections": [
+          {
+            "name": "Perilous Ascent Key",
+            "ref": "Fire in the Sky/Perilous Ascent/Key"
+          },
+          {
+            "name": "Perilous Ascent Bottles",
+            "ref": "Fire in the Sky/Perilous Ascent/Bottles"
+          },
+          {
+            "name": "Perilous Ascent Vault",
+            "ref": "Fire in the Sky/Perilous Ascent/Vault"
+          },
+          {
+            "name": "Perilous Ascent Hourglass",
+            "ref": "Fire in the Sky/Perilous Ascent/Hourglass"
+          },
+          {
+            "name": "Flaming Temple of Flame Key",
+            "ref": "Fire in the Sky/Flaming Temple of Flame/Key"
+          },
+          {
+            "name": "Flaming Temple of Flame Bottles",
+            "ref": "Fire in the Sky/Flaming Temple of Flame/Bottles"
+          },
+          {
+            "name": "Flaming Temple of Flame Vault",
+            "ref": "Fire in the Sky/Flaming Temple of Flame/Vault"
+          },
+          {
+            "name": "Flaming Temple of Flame Hourglass",
+            "ref": "Fire in the Sky/Flaming Temple of Flame/Hourglass"
+          },
+          {
+            "name": "Unseen Foe Key",
+            "ref": "Fire in the Sky/Unseen Foe/Key"
+          },
+          {
+            "name": "Unseen Foe Bottles",
+            "ref": "Fire in the Sky/Unseen Foe/Bottles"
+          },
+          {
+            "name": "Unseen Foe Vault",
+            "ref": "Fire in the Sky/Unseen Foe/Vault"
+          },
+          {
+            "name": "Unseen Foe Hourglass",
+            "ref": "Fire in the Sky/Unseen Foe/Hourglass"
+          },
+          {
+            "name": "King of the Hill Key",
+            "ref": "Fire in the Sky/King of the Hill/Key"
+          },
+          {
+            "name": "Rapid Fire Assault Key",
+            "ref": "Fire in the Sky/Rapid Fire Assault/Key"
+          },
+          {
+            "name": "Desperate Race Key",
+            "ref": "Fire in the Sky/Desperate Race/Key"
+          },
+          {
+            "name": "Flame Fu!",
+            "ref": "Fire in the Sky/Flame Fu!/Panda King"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hideout",
+            "x": 750,
+            "y": 350
+          }
+        ]
+      }
+    ]
+  }
+]

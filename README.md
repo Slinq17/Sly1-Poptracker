@@ -1,2 +1,2 @@
 # Sly1-Poptracker
-Poptracker for Sly 1 Archipelago randomizer
+Archipelago Sly 1 tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with Autotracking.

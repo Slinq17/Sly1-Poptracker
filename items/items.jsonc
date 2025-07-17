@@ -1,0 +1,576 @@
+[
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
+  // progressive moves:
+  {
+    "name": "Progressive Dive Attack",
+    "type": "consumable",
+    "img": "images/items/dive_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 2,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "progressive_dive_attack"
+  },
+  {
+    "name": "Progressive Roll",
+    "type": "consumable",
+    "img": "images/items/roll_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 2,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "progressive_roll"
+  },
+  {
+    "name": "Progressive Slow Motion",
+    "type": "consumable",
+    "img": "images/items/slow_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 3,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "progressive_slow_motion"
+  },
+  {
+    "name": "Progressive Safety",
+    "type": "consumable",
+    "img": "images/items/safety_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 2,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "progressive_safety"
+  },
+  {
+    "name": "Progressive Invisibility",
+    "type": "consumable",
+    "img": "images/items/invisibility_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 2,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "progressive_invisibility"
+  },
+  
+  // non-progressive moves:
+  {
+    "name": "Coin Magnet",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "coin_magnet"
+  },
+  {
+    "name": "Mine",
+    "type": "toggle",
+    "img": "images/items/mine_icon.png",
+    "codes": "mine"
+  },
+  {
+    "name": "Fast",
+    "type": "toggle",
+    "img": "images/items/fast_icon.png",
+    "codes": "fast"
+  },
+  {
+    "name": "Decoy",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "decoy"
+  },
+  {
+    "name": "Hacking",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "hacking"
+  },
+
+  // blueprints:
+  {
+    "name": "ToT Blueprints",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "tot_blueprints"
+  },
+  {
+    "name": "SSE Blueprints",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "sse_blueprints"
+  },
+  {
+    "name": "VV Blueprints",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "vv_blueprints"
+  },
+  {
+    "name": "FitS Blueprints",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "fits_blueprints"
+  },
+
+  // keys:
+  {
+    "name": "ToT Key",
+    "type": "consumable",
+    "img": "images/items/raleigh_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "tot_key"
+  },
+  {
+    "name": "SSE Key",
+    "type": "consumable",
+    "img": "images/items/muggshot_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "sse_key"
+  },
+  {
+    "name": "VV Key",
+    "type": "consumable",
+    "img": "images/items/mz_ruby_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "vv_key"
+  },
+  {
+    "name": "FitS Key",
+    "type": "consumable",
+    "img": "images/items/panda_king_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "fits_key"
+  },
+
+  //page hunt:
+  {
+    "name": "Thievius Raccoonus Page",
+    "type": "consumable",
+    "img": "images/items/thievius_raccoonus_page_icon.png",
+    "min_quantity": 0,
+    "max_quantity": 50, //does this depend on max pages in pool?
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 20,
+    "codes": "thievius_raccoonus_page"
+  },
+
+  // Victory:
+  {
+    "name": "Victory",
+    "type": "toggle",
+    "img": "images/items/toggle.png", //add logo later
+    "codes": "victory"
+  },
+
+  // Episodes:
+  {
+    "name": "Tide of Terror",
+    "type": "toggle",
+    "img": "images/items/ToT_icon.png",
+    "codes": "tide_of_terror"
+  },
+  {
+    "name": "Sunset Snake Eyes",
+    "type": "toggle",
+    "img": "images/items/SSE_icon.png",
+    "codes": "sunset_snake_eyes"
+  },
+  {
+    "name": "Vicious Voodoo",
+    "type": "toggle",
+    "img": "images/items/VV_icon.png",
+    "codes": "vicious_voodoo"
+  },
+  {
+    "name": "Fire in the Sky",
+    "type": "toggle",
+    "img": "images/items/FitS_icon.png",
+    "codes": "fire_in_the_sky"
+  },
+
+  // Bottles:
+  {
+    "name": "Stealthy Approach Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 20,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "stealthy_approach_bottle"
+  },
+  {
+    "name": "Into the Machine Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "into_the_machine_bottle"
+  },
+  {
+    "name": "High Class Heist Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "high_class_heist_bottle"
+  },
+  {
+    "name": "Fire Down Below Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "fire_down_below_bottle"
+  },
+  {
+    "name": "Cunning Disguise Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "cunning_disguise_bottle"
+  },
+  {
+    "name": "Gunboat Graveyard Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 20,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "gunboat_graveyard_bottle"
+  },
+
+  {
+    "name": "Rocky Start Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 40,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "rocky_start_bottle"
+  },
+  {
+    "name": "Boneyard Casino Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 40,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "boneyard_casino_bottle"
+  },
+  {
+    "name": "Straight to the Top Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 40,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "straight_to_the_top_bottle"
+  },
+  {
+    "name": "Two to Tango Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "two_to_tango_bottle"
+  },
+  {
+    "name": "Back Alley Heist Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "back_alley_heist_bottle"
+  },
+
+  {
+    "name": "Dread Swamp Path Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 20,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "dread_swamp_path_bottle"
+  },
+  {
+    "name": "Lair of the Beast Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "lair_of_the_beast_bottle"
+  },
+  {
+    "name": "Grave Undertaking Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 40,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "grave_undertaking_bottle"
+  },
+  {
+    "name": "Descent into Danger Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 40,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "descent_into_danger_bottle"
+  },
+
+  {
+    "name": "Perilous Ascent Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 30,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "perilous_ascent_bottle"
+  },
+  {
+    "name": "Flaming Temple of Flame Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 25,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "flaming_temple_of_flame_bottle"
+  },
+  {
+    "name": "Unseen Foe Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 25,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "unseen_foe_bottle"
+  },
+  {
+    "name": "Duel by the Dragon Bottle(s)",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add bottle image later
+    "min_quantity": 0,
+    "max_quantity": 40,
+    "increment": 1, //will this depend on bottle bundle size?
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "duel_by_the_dragon_bottle"
+  },
+
+  {
+    "name": "ToT Key",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add key image later
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "tot_key"
+  },
+
+  // junk items:
+  {
+    "name": "Charm",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add junk item image later
+    "min_quantity": 0,
+    "max_quantity": 100, //arbitrary number, adjust as needed
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "charm"
+  },
+  {
+    "name": "1 Up",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add junk item image later
+    "min_quantity": 0,
+    "max_quantity": 100, //arbitrary number, adjust as needed
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "1_up"
+  },
+  {
+    "name": "Ice Physics Trap",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add junk item image later
+    "min_quantity": 0,
+    "max_quantity": 100, //arbitrary number, adjust as needed
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "ice_physics_trap"
+  },
+  {
+    "name": "Speed Change Trap",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add junk item image later
+    "min_quantity": 0,
+    "max_quantity": 100, //arbitrary number, adjust as needed
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "speed_change_trap"
+  },
+  {
+    "name": "Ball Trap",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add junk item image later
+    "min_quantity": 0,
+    "max_quantity": 100, //arbitrary number, adjust as needed
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "ball_trap"
+  },
+  {
+    "name": "Invisibility Trap",
+    "type": "consumable",
+    "img": "images/items/consumable.png", //add junk item image later
+    "min_quantity": 0,
+    "max_quantity": 100, //arbitrary number, adjust as needed
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "codes": "invisibility_trap"
+  }
+]
