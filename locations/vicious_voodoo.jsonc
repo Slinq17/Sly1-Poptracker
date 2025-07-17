@@ -1,0 +1,203 @@
+[
+  {
+    "name": "Vicious Voodoo",
+    "access_rules": ["vicious_voodoo"],
+    "children": [
+      {
+        "name": "Dread Swamp Path",
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 20
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["dread_swamp_path_bottle:20"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Vicious Voodoo/Dread Swamp Path/Key,@Vicious Voodoo/Dread Swamp Path/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 310,
+            "y": 427
+          }
+        ]
+      },
+      {
+        "name": "Lair of the Beast",
+        "access_rules": ["vv_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["lair_of_the_beast_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Vicious Voodoo/Lair of the Beast/Key,@Vicious Voodoo/Lair of the Beast/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 507,
+            "y": 326
+          }
+        ]
+      },
+      {
+        "name": "Grave Undertaking",
+        "access_rules": ["vv_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 40
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["grave_undertaking_bottle:40"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Vicious Voodoo/Grave Undertaking/Key,@Vicious Voodoo/Grave Undertaking/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 454,
+            "y": 219
+          }
+        ]
+      },
+      {
+        "name": "Pirhana Lake",
+        "access_rules": ["vv_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 500,
+            "y": 275
+          }
+        ]
+      },
+      {
+        "name": "Down Home Cooking",
+        "access_rules": ["vv_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 300,
+            "y": 298
+          }
+        ]
+      },
+      {
+        "name": "Ghastly Voyage",
+        "access_rules": ["vv_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 182,
+            "y": 273
+          }
+        ]
+      },
+      {
+        "name": "Descent into Danger",
+        "access_rules": ["vv_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 40
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["descent_into_danger_bottle:40"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Vicious Voodoo/Descent Into Danger/Key,@Vicious Voodoo/Descent Into Danger/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 151,
+            "y": 356
+          }
+        ]
+      },
+      {
+        "name": "Deadly Dance",
+        "access_rules": ["vv_key:7"],
+        "sections": [
+          {
+            "name": "Ms. Ruby",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "VV",
+            "x": 243,
+            "y": 321
+          }
+        ]
+      }
+    ]
+  }
+]

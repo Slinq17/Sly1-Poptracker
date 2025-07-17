@@ -1,0 +1,5 @@
+Tracker:AddLocations("locations/hideout.jsonc")
+Tracker:AddLocations("locations/tide_of_terror.jsonc")
+Tracker:AddLocations("locations/sunset_snake_eyes.jsonc")
+Tracker:AddLocations("locations/vicious_voodoo.jsonc")
+Tracker:AddLocations("locations/fire_in_the_sky.jsonc")

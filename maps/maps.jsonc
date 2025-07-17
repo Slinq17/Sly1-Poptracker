@@ -1,0 +1,34 @@
+[
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#maps
+  
+  {
+    "name": "Hideout",
+    "location_size": 64,
+    "location_border_thickness": 4,
+    "img": "images/maps/Hideout.png"
+  },
+  {
+    "name": "ToT",
+    "location_size": 36,
+    "location_border_thickness": 4,
+    "img": "images/maps/ToT_map.png"
+  },
+  {
+    "name": "SSE",
+    "location_size": 24,
+    "location_border_thickness": 4,
+    "img": "images/maps/SSE_map.png"
+  },
+  {
+    "name": "VV",
+    "location_size": 36,
+    "location_border_thickness": 4,
+    "img": "images/maps/VV_map.png"
+  },
+  {
+    "name": "FitS",
+    "location_size": 36,
+    "location_border_thickness": 4,
+    "img": "images/maps/FitS_map.png"
+  }
+]

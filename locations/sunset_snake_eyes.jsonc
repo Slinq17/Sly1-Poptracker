@@ -1,0 +1,225 @@
+[
+  {
+    "name": "Sunset Snake Eyes",
+    "access_rules": ["sunset_snake_eyes"],
+    "map_locations": [
+      {
+        "map": "Hideout",
+        "x": 250,
+        "y": 350
+      }
+    ],
+    "children": [
+      {
+        "name": "Rocky Start",
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 40
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["rocky_start_bottle:40"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Sunset Snake Eyes/Rocky Start/Key,@Sunset Snake Eyes/Rocky Start/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 185,
+            "y": 335
+          }
+        ]
+      },
+      {
+        "name": "Boneyard Casino",
+        "access_rules": ["sse_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 40
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["boneyard_casino_bottle:40"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Sunset Snake Eyes/Boneyard Casino/Key,@Sunset Snake Eyes/Boneyard Casino/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 297,
+            "y": 236
+          }
+        ]
+      },
+      {
+        "name": "At the Dog Track",
+        "access_rules": ["sse_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 168,
+            "y": 286
+          }
+        ]
+      },
+      {
+        "name": "Murray's Big Gamble",
+        "access_rules": ["sse_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 328,
+            "y": 288
+          }
+        ]
+      },
+      {
+        "name": "Straight to the Top",
+        "access_rules": ["sse_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 40
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["straight_to_top_bottle:40"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Sunset Snake Eyes/Straight to the Top/Key,@Sunset Snake Eyes/Straight to the Top/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 151,
+            "y": 185
+          }
+        ]
+      },
+      {
+        "name": "Two to Tango",
+        "access_rules": ["sse_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["two_to_tango_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Sunset Snake Eyes/Two to Tango/Key,@Sunset Snake Eyes/Two to Tango/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 277,
+            "y": 181
+          }
+        ]
+      },
+      {
+        "name": "Back Alley Heist",
+        "access_rules": ["tot_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["back_alley_heist_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Sunset Snake Eyes/Back Alley Heist/Key,@Sunset Snake Eyes/Back Alley Heist/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 172,
+            "y": 235
+          }
+        ]
+      },
+      {
+        "name": "Last Call",
+        "access_rules": ["sse_key:7"],
+        "sections": [
+          {
+            "name": "Muggshot",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "SSE",
+            "x": 215,
+            "y": 183
+          }
+        ]
+      }
+    ]
+  }
+]

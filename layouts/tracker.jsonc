@@ -1,0 +1,88 @@
+{
+  //sets the trackers layout
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#layouts
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Episodes",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "episode_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Collectibles",
+              "dock": "right",
+              "content": {
+                "type": "layout",
+                "key": "collectible_grid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Hideout",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "Hideout"
+                ]
+              }
+            },
+            {
+              "title": "ToT",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "ToT"
+                ]
+              }
+            },
+            {
+              "title": "SSE",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "SSE"
+                ]
+              }
+            },
+            {
+              "title": "VV",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "VV"
+                ]
+              }
+            },
+            {
+              "title": "FitS",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "FitS"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Tide of Terror",
+    "access_rules": ["tide_of_terror"],
+    "children": [
+      {
+        "name": "Stealthy Approach",
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 20
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["stealthy_approach_bottle:20"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Tide of Terror/Stealthy Approach/Key,@Tide of Terror/Stealthy Approach/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 272,
+            "y": 550
+          }
+        ]
+      },
+      {
+        "name": "Into the Machine",
+        "access_rules": ["tot_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["into_the_machine_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Tide of Terror/Into the Machine/Key,@Tide of Terror/Into the Machine/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 152,
+            "y": 273
+          }
+        ]
+      },
+      {
+        "name": "High Class Heist",
+        "access_rules": ["tot_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["high_class_heist_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Tide of Terror/High Class Heist/Key,@Tide of Terror/High Class Heist/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 237,
+            "y": 212
+          }
+        ]
+      },
+      {
+        "name": "Fire Down Below",
+        "access_rules": ["tot_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["fire_down_below_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Tide of Terror/Fire Down Below/Key,@Tide of Terror/Fire Down Below/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 306,
+            "y": 277
+          }
+        ]
+      },
+      {
+        "name": "Cunning Disguise",
+        "access_rules": ["tot_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["cunning_disguise_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Tide of Terror/Cunning Disguise/Key,@Tide of Terror/Cunning Disguise/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 393,
+            "y": 265
+          }
+        ]
+      },
+      {
+        "name": "Gunboat Graveyard",
+        "access_rules": ["tot_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 20
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["gunboat_graveyard_bottle:20"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Tide of Terror/Gunboat Graveyard/Key,@Tide of Terror/Gunboat Graveyard/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 544,
+            "y": 239
+          }
+        ]
+      },
+      {
+        "name": "Treasure in the Depths",
+        "access_rules": ["tot_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 569,
+            "y": 196
+          }
+        ]
+      },
+      {
+        "name": "Eye of the Storm",
+        "access_rules": ["tot_key:7"],
+        "sections": [
+          {
+            "name": "Raleigh",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ToT",
+            "x": 601,
+            "y": 262
+          }
+        ]
+      }
+    ]
+  }
+]

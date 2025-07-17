@@ -1,0 +1,203 @@
+[
+  {
+    "name": "Fire in the Sky",
+    "access_rules": ["fire_in_the_sky"],
+    "children": [
+      {
+        "name": "Perilous Ascent",
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["perilous_ascent_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Fire in the Sky/Perilous Ascent/Key,@Fire in the Sky/Perilous Ascent/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 408,
+            "y": 429
+          }
+        ]
+      },
+      {
+        "name": "Flaming Temple of Flame",
+        "access_rules": ["fits_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 25
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["flaming_temple_of_flame_bottle:25"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Fire in the Sky/Flaming Temple of Flame/Key,@Fire in the Sky/Flaming Temple of Flame/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 512,
+            "y": 291
+          }
+        ]
+      },
+      {
+        "name": "Unseen Foe",
+        "access_rules": ["fits_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 30
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["unseen_foe_bottle:30"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Fire in the Sky/Unseen Foe/Key,@Fire in the Sky/Unseen Foe/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 177,
+            "y": 293
+          }
+        ]
+      },
+      {
+        "name": "King of the Hill",
+        "access_rules": ["fits_key:1"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 224,
+            "y": 358
+          }
+        ]
+      },
+      {
+        "name": "Rapid Fire Assault",
+        "access_rules": ["fits_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 615,
+            "y": 228
+          }
+        ]
+      },
+      {
+        "name": "Desperate Race",
+        "access_rules": ["fits_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 380,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "name": "Duel by the Dragon",
+        "access_rules": ["fits_key:3"],
+        "sections": [
+          {
+            "name": "Key",
+            "item_count": 1
+          },
+          {
+            "name": "Bottles",
+            "clear_as_group": false,
+            "item_count": 40
+          },
+          {
+            "name": "Vault",
+            "access_rules": ["duel_by_the_dragon_bottle:40"],
+            "item_count": 1
+          },
+          {
+            "name": "Hourglass",
+            "access_rules": ["@Fire in the Sky/Duel by the Dragon/Key,@Fire in the Sky/Duel by the Dragon/Vault"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 525,
+            "y": 185
+          }
+        ]
+      },
+      {
+        "name": "Flame Fu!",
+        "access_rules": ["fits_key:7"],
+        "sections": [
+          {
+            "name": "Panda King",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "FitS",
+            "x": 260,
+            "y": 242
+          }
+        ]
+      }
+    ]
+  }
+]

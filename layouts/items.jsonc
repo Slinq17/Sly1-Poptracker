@@ -1,0 +1,59 @@
+{
+  // sets layouts for shadred items grids
+  // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
+  "episode_grid": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "2,3",
+        "h_alignment": "center",
+        "item_size": 100,
+        "rows": [
+          [
+            "tide_of_terror",
+            "sunset_snake_eyes"
+          ],
+          [
+            "vicious_voodoo",
+            "fire_in_the_sky"
+          ]
+        ]
+      }
+    ]
+  },
+  "collectible_grid": {
+    "type": "array",
+    "orientation": "horizontal",
+    "h_alignment": "left",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "2,3",
+        "h_alignment": "left",
+        "item_size": 60,
+        "rows": [
+          [
+            "tot_key",
+            "sse_key",
+            "vv_key",
+            "fits_key",
+            "thievius_raccoonus_page"
+          ],
+          [
+            "fast",
+            "progressive_safety",
+            "progressive_dive_attack",
+            "progressive_slow_motion"
+          ],
+          [
+            "progressive_roll",
+            "progressive_invisibility",
+            "mine"
+          ]
+        ]
+      }
+    ]
+  }
+}
