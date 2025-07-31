@@ -16,7 +16,7 @@
             "item_count": 30
           },
           {
-            "name": "Vault",
+            "name": "Vault(5-7-8)",
             "access_rules": ["perilous_ascent_bottle:30"],
             "item_count": 1
           },
@@ -48,7 +48,7 @@
             "item_count": 25
           },
           {
-            "name": "Vault",
+            "name": "Vault(9-3-2)",
             "access_rules": ["flaming_temple_of_flame_bottle:25"],
             "item_count": 1
           },
@@ -80,7 +80,7 @@
             "item_count": 30
           },
           {
-            "name": "Vault",
+            "name": "Vault(6-6-7)",
             "access_rules": ["unseen_foe_bottle:30"],
             "item_count": 1
           },
@@ -163,7 +163,7 @@
             "item_count": 40
           },
           {
-            "name": "Vault",
+            "name": "Vault(2-3-1)",
             "access_rules": ["duel_by_the_dragon_bottle:40"],
             "item_count": 1
           },
