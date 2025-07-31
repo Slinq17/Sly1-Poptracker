@@ -169,7 +169,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Vicious Voodoo/Descent Into Danger/Key,@Vicious Voodoo/Descent Into Danger/Vault"],
+            "access_rules": ["@Vicious Voodoo/Descent into Danger/Key,@Vicious Voodoo/Descent into Danger/Vault"],
             "item_count": 1
           }
         ],
