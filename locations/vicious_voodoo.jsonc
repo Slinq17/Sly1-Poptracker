@@ -16,7 +16,7 @@
             "item_count": 20
           },
           {
-            "name": "Vault",
+            "name": "Vault(5-8-8)",
             "access_rules": ["dread_swamp_path_bottle:20"],
             "item_count": 1
           },
@@ -48,7 +48,7 @@
             "item_count": 30
           },
           {
-            "name": "Vault",
+            "name": "Vault(4-4-4)",
             "access_rules": ["lair_of_the_beast_bottle:30"],
             "item_count": 1
           },
@@ -80,7 +80,7 @@
             "item_count": 40
           },
           {
-            "name": "Vault",
+            "name": "Vault(1-2-8)",
             "access_rules": ["grave_undertaking_bottle:40"],
             "item_count": 1
           },
@@ -163,7 +163,7 @@
             "item_count": 40
           },
           {
-            "name": "Vault",
+            "name": "Vault(5-7-1)",
             "access_rules": ["descent_into_danger_bottle:40"],
             "item_count": 1
           },

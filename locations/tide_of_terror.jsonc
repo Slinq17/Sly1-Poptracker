@@ -16,7 +16,7 @@
             "item_count": 20
           },
           {
-            "name": "Vault",
+            "name": "Vault(7-9-2)",
             "access_rules": ["stealthy_approach_bottle:20"],
             "item_count": 1
           },
@@ -48,7 +48,7 @@
             "item_count": 30
           },
           {
-            "name": "Vault",
+            "name": "Vault(2-2-7)",
             "access_rules": ["into_the_machine_bottle:30"],
             "item_count": 1
           },
@@ -80,7 +80,7 @@
             "item_count": 30
           },
           {
-            "name": "Vault",
+            "name": "Vault(4-3-6)",
             "access_rules": ["high_class_heist_bottle:30"],
             "item_count": 1
           },
@@ -112,7 +112,7 @@
             "item_count": 30
           },
           {
-            "name": "Vault",
+            "name": "Vault(5-7-9)",
             "access_rules": ["fire_down_below_bottle:30"],
             "item_count": 1
           },
@@ -144,7 +144,7 @@
             "item_count": 30
           },
           {
-            "name": "Vault",
+            "name": "Vault(2-4-2)",
             "access_rules": ["cunning_disguise_bottle:30"],
             "item_count": 1
           },
@@ -176,7 +176,7 @@
             "item_count": 20
           },
           {
-            "name": "Vault",
+            "name": "Vault(7-1-9)",
             "access_rules": ["gunboat_graveyard_bottle:20"],
             "item_count": 1
           },
