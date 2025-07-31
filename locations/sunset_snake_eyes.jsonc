@@ -173,7 +173,7 @@
       },
       {
         "name": "Back Alley Heist",
-        "access_rules": ["tot_key:3"],
+        "access_rules": ["sse_key:3"],
         "sections": [
           {
             "name": "Key",
