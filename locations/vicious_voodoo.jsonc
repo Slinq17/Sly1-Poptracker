@@ -22,7 +22,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Vicious Voodoo/Dread Swamp Path/Key,@Vicious Voodoo/Dread Swamp Path/Vault"],
+            "access_rules": ["@Vicious Voodoo/Dread Swamp Path/Key,@Vicious Voodoo/Dread Swamp Path/Vault(5-8-8)"],
             "item_count": 1
           }
         ],
@@ -54,7 +54,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Vicious Voodoo/Lair of the Beast/Key,@Vicious Voodoo/Lair of the Beast/Vault"],
+            "access_rules": ["@Vicious Voodoo/Lair of the Beast/Key,@Vicious Voodoo/Lair of the Beast/Vault(4-4-4)"],
             "item_count": 1
           }
         ],
@@ -86,7 +86,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Vicious Voodoo/Grave Undertaking/Key,@Vicious Voodoo/Grave Undertaking/Vault"],
+            "access_rules": ["@Vicious Voodoo/Grave Undertaking/Key,@Vicious Voodoo/Grave Undertaking/Vault(1-2-8)"],
             "item_count": 1
           }
         ],
@@ -169,7 +169,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Vicious Voodoo/Descent into Danger/Key,@Vicious Voodoo/Descent into Danger/Vault"],
+            "access_rules": ["@Vicious Voodoo/Descent into Danger/Key,@Vicious Voodoo/Descent into Danger/Vault(5-7-1)"],
             "item_count": 1
           }
         ],

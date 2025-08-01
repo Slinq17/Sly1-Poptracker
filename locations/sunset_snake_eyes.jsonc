@@ -29,7 +29,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Sunset Snake Eyes/Rocky Start/Key,@Sunset Snake Eyes/Rocky Start/Vault"],
+            "access_rules": ["@Sunset Snake Eyes/Rocky Start/Key,@Sunset Snake Eyes/Rocky Start/Vault(3-1-4)"],
             "item_count": 1
           }
         ],
@@ -61,7 +61,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Sunset Snake Eyes/Boneyard Casino/Key,@Sunset Snake Eyes/Boneyard Casino/Vault"],
+            "access_rules": ["@Sunset Snake Eyes/Boneyard Casino/Key,@Sunset Snake Eyes/Boneyard Casino/Vault(3-3-8)"],
             "item_count": 1
           }
         ],
@@ -127,7 +127,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Sunset Snake Eyes/Straight to the Top/Key,@Sunset Snake Eyes/Straight to the Top/Vault"],
+            "access_rules": ["@Sunset Snake Eyes/Straight to the Top/Key,@Sunset Snake Eyes/Straight to the Top/Vault(4-6-8)"],
             "item_count": 1
           }
         ],
@@ -159,7 +159,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Sunset Snake Eyes/Two to Tango/Key,@Sunset Snake Eyes/Two to Tango/Vault"],
+            "access_rules": ["@Sunset Snake Eyes/Two to Tango/Key,@Sunset Snake Eyes/Two to Tango/Vault(5-3-2)"],
             "item_count": 1
           }
         ],
@@ -191,7 +191,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Sunset Snake Eyes/Back Alley Heist/Key,@Sunset Snake Eyes/Back Alley Heist/Vault"],
+            "access_rules": ["@Sunset Snake Eyes/Back Alley Heist/Key,@Sunset Snake Eyes/Back Alley Heist/Vault(5-6-5)"],
             "item_count": 1
           }
         ],

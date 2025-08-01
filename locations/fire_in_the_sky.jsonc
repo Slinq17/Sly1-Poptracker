@@ -22,7 +22,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Fire in the Sky/Perilous Ascent/Key,@Fire in the Sky/Perilous Ascent/Vault"],
+            "access_rules": ["@Fire in the Sky/Perilous Ascent/Key,@Fire in the Sky/Perilous Ascent/Vault(5-7-8)"],
             "item_count": 1
           }
         ],
@@ -54,7 +54,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Fire in the Sky/Flaming Temple of Flame/Key,@Fire in the Sky/Flaming Temple of Flame/Vault"],
+            "access_rules": ["@Fire in the Sky/Flaming Temple of Flame/Key,@Fire in the Sky/Flaming Temple of Flame/Vault(9-3-2)"],
             "item_count": 1
           }
         ],
@@ -86,7 +86,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Fire in the Sky/Unseen Foe/Key,@Fire in the Sky/Unseen Foe/Vault"],
+            "access_rules": ["@Fire in the Sky/Unseen Foe/Key,@Fire in the Sky/Unseen Foe/Vault(6-6-7)"],
             "item_count": 1
           }
         ],
@@ -169,7 +169,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Fire in the Sky/Duel by the Dragon/Key,@Fire in the Sky/Duel by the Dragon/Vault"],
+            "access_rules": ["@Fire in the Sky/Duel by the Dragon/Key,@Fire in the Sky/Duel by the Dragon/Vault(2-3-1)"],
             "item_count": 1
           }
         ],
