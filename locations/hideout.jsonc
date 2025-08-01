@@ -31,8 +31,8 @@
             "ref": "Tide of Terror/Stealthy Approach/Bottles"
           },
           {
-            "name": "Stealthy Approach Vault",
-            "ref": "Tide of Terror/Stealthy Approach/Vault"
+            "name": "Stealthy Approach Vault(7-9-2)",
+            "ref": "Tide of Terror/Stealthy Approach/Vault(7-9-2)"
           },
           {
             "name": "Stealthy Approach Hourglass",
@@ -47,8 +47,8 @@
             "ref": "Tide of Terror/Into the Machine/Bottles"
           },
           {
-            "name": "Into the Machine Vault",
-            "ref": "Tide of Terror/Into the Machine/Vault"
+            "name": "Into the Machine Vault(2-2-7)",
+            "ref": "Tide of Terror/Into the Machine/Vault(2-2-7)"
           },
           {
             "name": "Into the Machine Hourglass",
@@ -63,8 +63,8 @@
             "ref": "Tide of Terror/High Class Heist/Bottles"
           },
           {
-            "name": "High Class Heist Vault",
-            "ref": "Tide of Terror/High Class Heist/Vault"
+            "name": "High Class Heist Vault(4-3-6)",
+            "ref": "Tide of Terror/High Class Heist/Vault(4-3-6)"
           },
           {
             "name": "High Class Heist Hourglass",
@@ -79,8 +79,8 @@
             "ref": "Tide of Terror/Fire Down Below/Bottles"
           },
           {
-            "name": "Fire Down Below Vault",
-            "ref": "Tide of Terror/Fire Down Below/Vault"
+            "name": "Fire Down Below Vault(5-7-9)",
+            "ref": "Tide of Terror/Fire Down Below/Vault(5-7-9)"
           },
           {
             "name": "Fire Down Below Hourglass",
@@ -95,8 +95,8 @@
             "ref": "Tide of Terror/Cunning Disguise/Bottles"
           },
           {
-            "name": "Cunning Disguise Vault",
-            "ref": "Tide of Terror/Cunning Disguise/Vault"
+            "name": "Cunning Disguise Vault(2-4-2)",
+            "ref": "Tide of Terror/Cunning Disguise/Vault(2-4-2)"
           },
           {
             "name": "Cunning Disguise Hourglass",
@@ -111,8 +111,8 @@
             "ref": "Tide of Terror/Gunboat Graveyard/Bottles"
           },
           {
-            "name": "Gunboat Graveyard Vault",
-            "ref": "Tide of Terror/Gunboat Graveyard/Vault"
+            "name": "Gunboat Graveyard Vault(7-1-9)",
+            "ref": "Tide of Terror/Gunboat Graveyard/Vault(7-1-9)"
           },
           {
             "name": "Gunboat Graveyard Hourglass",
@@ -148,8 +148,8 @@
             "ref": "Sunset Snake Eyes/Rocky Start/Bottles"
           },
           {
-            "name": "Rocky Start Vault",
-            "ref": "Sunset Snake Eyes/Rocky Start/Vault"
+            "name": "Rocky Start Vault(3-1-4)",
+            "ref": "Sunset Snake Eyes/Rocky Start/Vault(3-1-4)"
           },
           {
             "name": "Rocky Start Hourglass",
@@ -164,8 +164,8 @@
             "ref": "Sunset Snake Eyes/Boneyard Casino/Bottles"
           },
           {
-            "name": "Boneyard Casino Vault",
-            "ref": "Sunset Snake Eyes/Boneyard Casino/Vault"
+            "name": "Boneyard Casino Vault(3-3-8)",
+            "ref": "Sunset Snake Eyes/Boneyard Casino/Vault(3-3-8)"
           },
           {
             "name": "Boneyard Casino Hourglass",
@@ -188,8 +188,8 @@
             "ref": "Sunset Snake Eyes/Straight to the Top/Bottles"
           },
           {
-            "name": "Straight to the Top Vault",
-            "ref": "Sunset Snake Eyes/Straight to the Top/Vault"
+            "name": "Straight to the Top Vault(4-6-8)",
+            "ref": "Sunset Snake Eyes/Straight to the Top/Vault(4-6-8)"
           },
           {
             "name": "Straight to the Top Hourglass",
@@ -204,8 +204,8 @@
             "ref": "Sunset Snake Eyes/Two to Tango/Bottles"
           },
           {
-            "name": "Two to Tango Vault",
-            "ref": "Sunset Snake Eyes/Two to Tango/Vault"
+            "name": "Two to Tango Vault(5-3-2)",
+            "ref": "Sunset Snake Eyes/Two to Tango/Vault(5-3-2)"
           },
           {
             "name": "Two to Tango Hourglass",
@@ -220,8 +220,8 @@
             "ref": "Sunset Snake Eyes/Back Alley Heist/Bottles"
           },
           {
-            "name": "Back Alley Heist Vault",
-            "ref": "Sunset Snake Eyes/Back Alley Heist/Vault"
+            "name": "Back Alley Heist Vault(5-6-5)",
+            "ref": "Sunset Snake Eyes/Back Alley Heist/Vault(5-6-5)"
           },
           {
             "name": "Back Alley Heist Hourglass",
@@ -253,8 +253,8 @@
             "ref": "Vicious Voodoo/Dread Swamp Path/Bottles"
           },
           {
-            "name": "Dread Swamp Path Vault",
-            "ref": "Vicious Voodoo/Dread Swamp Path/Vault"
+            "name": "Dread Swamp Path Vault(5-8-8)",
+            "ref": "Vicious Voodoo/Dread Swamp Path/Vault(5-8-8)"
           },
           {
             "name": "Dread Swamp Path Hourglass",
@@ -269,8 +269,8 @@
             "ref": "Vicious Voodoo/Lair of the Beast/Bottles"
           },
           {
-            "name": "Lair of the Beast Vault",
-            "ref": "Vicious Voodoo/Lair of the Beast/Vault"
+            "name": "Lair of the Beast Vault(4-4-4)",
+            "ref": "Vicious Voodoo/Lair of the Beast/Vault(4-4-4)"
           },
           {
             "name": "Lair of the Beast Hourglass",
@@ -285,8 +285,8 @@
             "ref": "Vicious Voodoo/Grave Undertaking/Bottles"
           },
           {
-            "name": "Grave Undertaking Vault",
-            "ref": "Vicious Voodoo/Grave Undertaking/Vault"
+            "name": "Grave Undertaking Vault(1-2-8)",
+            "ref": "Vicious Voodoo/Grave Undertaking/Vault(1-2-8)"
           },
           {
             "name": "Grave Undertaking Hourglass",
@@ -313,8 +313,8 @@
             "ref": "Vicious Voodoo/Descent Into Danger/Bottles"
           },
           {
-            "name": "Descent Into Danger Vault",
-            "ref": "Vicious Voodoo/Descent Into Danger/Vault"
+            "name": "Descent Into Danger Vault(5-7-1)",
+            "ref": "Vicious Voodoo/Descent Into Danger/Vault(5-7-1)"
           },
           {
             "name": "Descent Into Danger Hourglass",
@@ -346,8 +346,8 @@
             "ref": "Fire in the Sky/Perilous Ascent/Bottles"
           },
           {
-            "name": "Perilous Ascent Vault",
-            "ref": "Fire in the Sky/Perilous Ascent/Vault"
+            "name": "Perilous Ascent Vault(5-7-8)",
+            "ref": "Fire in the Sky/Perilous Ascent/Vault(5-7-8)"
           },
           {
             "name": "Perilous Ascent Hourglass",
@@ -362,8 +362,8 @@
             "ref": "Fire in the Sky/Flaming Temple of Flame/Bottles"
           },
           {
-            "name": "Flaming Temple of Flame Vault",
-            "ref": "Fire in the Sky/Flaming Temple of Flame/Vault"
+            "name": "Flaming Temple of Flame Vault(9-3-2)",
+            "ref": "Fire in the Sky/Flaming Temple of Flame/Vault(9-3-2)"
           },
           {
             "name": "Flaming Temple of Flame Hourglass",
@@ -378,8 +378,8 @@
             "ref": "Fire in the Sky/Unseen Foe/Bottles"
           },
           {
-            "name": "Unseen Foe Vault",
-            "ref": "Fire in the Sky/Unseen Foe/Vault"
+            "name": "Unseen Foe Vault(6-6-7)",
+            "ref": "Fire in the Sky/Unseen Foe/Vault(6-6-7)"
           },
           {
             "name": "Unseen Foe Hourglass",

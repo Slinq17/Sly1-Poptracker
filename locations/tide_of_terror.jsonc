@@ -22,7 +22,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Stealthy Approach/Key,@Tide of Terror/Stealthy Approach/Vault"],
+            "access_rules": ["@Tide of Terror/Stealthy Approach/Key,@Tide of Terror/Stealthy Approach/Vault(7-9-2)"],
             "item_count": 1
           }
         ],
@@ -54,7 +54,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Into the Machine/Key,@Tide of Terror/Into the Machine/Vault"],
+            "access_rules": ["@Tide of Terror/Into the Machine/Key,@Tide of Terror/Into the Machine/Vault(2-2-7)"],
             "item_count": 1
           }
         ],
@@ -86,7 +86,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/High Class Heist/Key,@Tide of Terror/High Class Heist/Vault"],
+            "access_rules": ["@Tide of Terror/High Class Heist/Key,@Tide of Terror/High Class Heist/Vault(4-3-6)"],
             "item_count": 1
           }
         ],
@@ -118,7 +118,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Fire Down Below/Key,@Tide of Terror/Fire Down Below/Vault"],
+            "access_rules": ["@Tide of Terror/Fire Down Below/Key,@Tide of Terror/Fire Down Below/Vault(5-7-9)"],
             "item_count": 1
           }
         ],
@@ -150,7 +150,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Cunning Disguise/Key,@Tide of Terror/Cunning Disguise/Vault"],
+            "access_rules": ["@Tide of Terror/Cunning Disguise/Key,@Tide of Terror/Cunning Disguise/Vault(2-4-2)"],
             "item_count": 1
           }
         ],
@@ -182,7 +182,7 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Gunboat Graveyard/Key,@Tide of Terror/Gunboat Graveyard/Vault"],
+            "access_rules": ["@Tide of Terror/Gunboat Graveyard/Key,@Tide of Terror/Gunboat Graveyard/Vault(7-1-9)"],
             "item_count": 1
           }
         ],
