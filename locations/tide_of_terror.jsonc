@@ -13,6 +13,7 @@
           {
             "name": "Bottles",
             "clear_as_group": false,
+            "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 20
           },
           {
@@ -22,7 +23,11 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Stealthy Approach/Key,@Tide of Terror/Stealthy Approach/Vault(7-9-2)"],
+            "access_rules": [
+              "opt_require_roll_yes,progressive_roll:1,@Tide of Terror/Stealthy Approach/Key,@Tide of Terror/Stealthy Approach/Vault(7-9-2)",
+              "opt_require_roll_no,@Tide of Terror/Stealthy Approach/Key,@Tide of Terror/Stealthy Approach/Vault(7-9-2)"
+            ],
+            "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
           }
         ],
@@ -45,6 +50,7 @@
           {
             "name": "Bottles",
             "clear_as_group": false,
+            "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
@@ -54,7 +60,11 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Into the Machine/Key,@Tide of Terror/Into the Machine/Vault(2-2-7)"],
+            "access_rules": [
+              "opt_require_roll_yes,progressive_roll:1,@Tide of Terror/Into the Machine/Key,@Tide of Terror/Into the Machine/Vault(2-2-7)",
+              "opt_require_roll_no,@Tide of Terror/Into the Machine/Key,@Tide of Terror/Into the Machine/Vault(2-2-7)"
+            ],
+            "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
           }
         ],
@@ -77,6 +87,7 @@
           {
             "name": "Bottles",
             "clear_as_group": false,
+            "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
@@ -86,7 +97,11 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/High Class Heist/Key,@Tide of Terror/High Class Heist/Vault(4-3-6)"],
+            "access_rules": [
+              "opt_require_roll_yes,progressive_roll:1,@Tide of Terror/High Class Heist/Key,@Tide of Terror/High Class Heist/Vault(4-3-6)",
+              "opt_require_roll_no,@Tide of Terror/High Class Heist/Key,@Tide of Terror/High Class Heist/Vault(4-3-6)"
+            ],
+            "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
           }
         ],
@@ -108,6 +123,7 @@
           },
           {
             "name": "Bottles",
+            "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "clear_as_group": false,
             "item_count": 30
           },
@@ -118,7 +134,11 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Fire Down Below/Key,@Tide of Terror/Fire Down Below/Vault(5-7-9)"],
+            "access_rules": [
+              "opt_require_roll_yes,progressive_roll:1,@Tide of Terror/Fire Down Below/Key,@Tide of Terror/Fire Down Below/Vault(5-7-9)",
+              "opt_require_roll_no,@Tide of Terror/Fire Down Below/Key,@Tide of Terror/Fire Down Below/Vault(5-7-9)"
+            ],
+            "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
           }
         ],
@@ -141,6 +161,7 @@
           {
             "name": "Bottles",
             "clear_as_group": false,
+            "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
@@ -150,7 +171,11 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Cunning Disguise/Key,@Tide of Terror/Cunning Disguise/Vault(2-4-2)"],
+            "access_rules": [
+              "opt_require_roll_yes,progressive_roll:1,@Tide of Terror/Cunning Disguise/Key,@Tide of Terror/Cunning Disguise/Vault(2-4-2)",
+              "opt_require_roll_no,@Tide of Terror/Cunning Disguise/Key,@Tide of Terror/Cunning Disguise/Vault(2-4-2)"
+            ],
+            "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
           }
         ],
@@ -173,6 +198,7 @@
           {
             "name": "Bottles",
             "clear_as_group": false,
+            "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 20
           },
           {
@@ -182,7 +208,11 @@
           },
           {
             "name": "Hourglass",
-            "access_rules": ["@Tide of Terror/Gunboat Graveyard/Key,@Tide of Terror/Gunboat Graveyard/Vault(7-1-9)"],
+            "access_rules": [
+              "opt_require_roll_yes,progressive_roll:1,@Tide of Terror/Gunboat Graveyard/Key,@Tide of Terror/Gunboat Graveyard/Vault(7-1-9)",
+              "opt_require_roll_no,@Tide of Terror/Gunboat Graveyard/Key,@Tide of Terror/Gunboat Graveyard/Vault(7-1-9)"
+            ],
+            "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
           }
         ],
@@ -217,6 +247,7 @@
         "sections": [
           {
             "name": "Raleigh",
+            "hosted_item": "boss_beaten_count",
             "item_count": 1
           }
         ],

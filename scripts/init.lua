@@ -12,8 +12,11 @@ if ENABLE_DEBUG_LOG then
     print("Debug logging is enabled!")
 end
 
+ScriptHost:LoadScript("scripts/logic/logic.lua")
+
 -- Items
 Tracker:AddItems("items/items.jsonc")
+Tracker:AddItems("items/options.jsonc")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
@@ -26,6 +29,7 @@ end
 Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
+Tracker:AddLayouts("layouts/settings.jsonc")
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then

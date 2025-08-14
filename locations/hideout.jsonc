@@ -409,6 +409,26 @@
             "y": 350
           }
         ]
+      },
+      {
+        "name": "Cold Heart of Hate",
+        "access_rules": [
+          "$has_pages",
+          "$has_bosses"
+        ],
+        "sections": [
+          {
+            "name": "Beat Clockwerk(Event)",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hideout",
+            "x": 750,
+            "y": 650
+          }
+        ]
       }
     ]
   }

@@ -66,9 +66,9 @@ function resetItem(item_code, item_type)
 	local obj = Tracker:FindObjectForCode(item_code)
 	if obj then
 		item_type = item_type or obj.Type
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("resetItem: resetting item %s of type %s", item_code, item_type))
-		end
+		-- if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		-- 	print(string.format("resetItem: resetting item %s of type %s", item_code, item_type))
+		-- end
 		if item_type == "toggle" or item_type == "toggle_badged" then
 			obj.Active = false
 		elseif item_type == "progressive" or item_type == "progressive_toggle" then
@@ -132,16 +132,60 @@ end
 
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
-	-- put any code here that slot_data should affect (toggling setting items for example)
+	if slot_data["options"]["IncludeHourglasses"] ~= nil then
+		local obj = Tracker:FindObjectForCode("opt_hourglasses")
+		local stage = slot_data["options"]["IncludeHourglasses"]
+		if stage >= 1 then
+			stage = 1
+		end
+		if obj then
+			obj.CurrentStage = stage
+		end
+	end
+	if slot_data["options"]["HourglassesRequireRoll"] ~= nil then
+		local obj = Tracker:FindObjectForCode("opt_require_roll")
+		local stage = slot_data["options"]["HourglassesRequireRoll"]
+		if stage >= 1 then
+			stage = 1
+		end
+		if obj then
+			obj.CurrentStage = stage
+		end
+	end
+	if slot_data["options"]["UnlockClockwerk"] ~= nil then
+		local obj = Tracker:FindObjectForCode("opt_unlock_clockwerk")
+		local stage = slot_data["options"]["UnlockClockwerk"]
+		if stage >= 1 then
+			stage = 1
+		end
+		if obj then
+			obj.CurrentStage = stage
+		end
+	end
+	if slot_data["options"]["RequiredBosses"] ~= nil then
+		Tracker:FindObjectForCode('opt_required_bosses').AcquiredCount = slot_data["options"]["RequiredBosses"]
+	else
+		Tracker:FindObjectForCode('opt_required_bosses').AcquiredCount = 0
+	end
+	if slot_data["options"]["RequiredPages"] ~= nil then
+		Tracker:FindObjectForCode('opt_required_pages').AcquiredCount = slot_data["options"]["RequiredPages"]
+	else
+		Tracker:FindObjectForCode('opt_required_pages').AcquiredCount = 0
+	end
+	if slot_data["options"]["LocationCluesanityBundleSize"] ~= nil then
+		Tracker:FindObjectForCode('opt_location_cluesanity_bundle_size').AcquiredCount = slot_data["options"]["LocationCluesanityBundleSize"]
+	else
+		Tracker:FindObjectForCode('opt_location_cluesanity_bundle_size').AcquiredCount = 0
+	end
 end
 
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
 	Tracker.BulkUpdate = true
-	-- if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-	-- 	print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
-	-- end
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
+	end
 	CUR_INDEX = -1
 	-- reset locations
 	for _, mapping_entry in pairs(LOCATION_MAPPING) do
@@ -149,9 +193,9 @@ function onClear(slot_data)
 			if location_table then
 				local location_code = location_table[1]
 				if location_code then
-					if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-						print(string.format("onClear: clearing location %s", location_code))
-					end
+					-- if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+					-- 	print(string.format("onClear: clearing location %s", location_code))
+					-- end
 					if location_code:sub(1, 1) == "@" then
 						local obj = Tracker:FindObjectForCode(location_code)
 						if obj then
@@ -193,7 +237,7 @@ function onClear(slot_data)
 	end
 	apply_slot_data(slot_data)
 	SLOT_DATA = slot_data
-	print(string.format("options %s", SLOT_DATA.options.ItemCluesanityBundleSize))
+	-- print(string.format("options %s", SLOT_DATA.options.ItemCluesanityBundleSize))
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
 	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
@@ -207,10 +251,10 @@ function onClear(slot_data)
 	end
 	-- subscribes to the data storage keys for updates
 	-- triggers callback in the SetNotify handler on update
-	Archipelago:SetNotify(data_strorage_keys)
+	Archipelago:SetNotify({"Slot: " .. Archipelago.PlayerNumber .. " :CurrentWorld"})
 	-- gets the current value for the data storage keys
 	-- triggers callback in the Retrieved handler when result is received
-	Archipelago:Get(data_strorage_keys)
+	--Archipelago:Get(data_strorage_keys)
 	Tracker.BulkUpdate = false
 end
 
@@ -303,6 +347,8 @@ function onLocation(location_id, location_name)
 							else
 								obj.AvailableChestCount = obj.AvailableChestCount - SLOT_DATA.options.LocationCluesanityBundleSize
 							end
+						elseif location_code == "@Tide of Terror/Eye of the Storm/Raleigh" or location_code == "@Sunset Snake Eyes/Last Call/Muggshot" or location_code == "@Vicious Voodoo/Deadly Dance/Ms. Ruby" or location_code == "@Fire in the Sky/Flame Fu!/Panda King" then
+							incrementItem("boss_beaten_count")
 						else 
 							obj.AvailableChestCount = obj.AvailableChestCount - 1
 						end
@@ -432,6 +478,27 @@ function updateHint(hint, sections_to_update)
 	end
 end
 
+function onChangedRegion(key, current_region, old_region)
+	print("Key: " .. key)
+	print("Current: " .. current_region)
+	print("Old: " .. old_region)
+	-- regioninfo = current_region
+    -- if (current_region ~= old_region) then
+	-- 	-- print("Key: " .. key)
+	-- 	-- print("Current: " .. current_region)
+	-- 	-- print("Old: " .. old_region)
+    --     if TABS_MAPPING[current_region] then
+    --         CURRENT_ROOM = TABS_MAPPING[current_region]
+	-- 		print("First Option")
+    --     else
+    --         CURRENT_ROOM = CURRENT_ROOM_ADDRESS
+	-- 		print("Second Option")
+    --     end
+    --         print("Switching tab to " .. CURRENT_ROOM)
+    --     Tracker:UiHint("ActivateTab", CURRENT_ROOM)
+    -- end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
@@ -441,8 +508,8 @@ end
 if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 	Archipelago:AddLocationHandler("location handler", onLocation)
 end
-Archipelago:AddRetrievedHandler("retrieved handler", onDataStorageUpdate)
-Archipelago:AddSetReplyHandler("set reply handler", onDataStorageUpdate)
+--Archipelago:AddRetrievedHandler("retrieved handler", onDataStorageUpdate)
+Archipelago:AddSetReplyHandler("CurrentWorld", onChangedRegion)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
 

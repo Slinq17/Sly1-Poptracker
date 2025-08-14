@@ -1,7 +1,7 @@
 {
   "name": "Sly1-PopTracker",
   "game_name": "Sly Cooper and the Thievius Raccoonus",
-  "package_version": "0.1.0",
+  "package_version": "0.1.0-alpha",
   "package_uid": "sly1_ap",
   "author": "Slinq",
   "min_poptracker_version": "0.25.9",
