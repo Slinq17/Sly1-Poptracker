@@ -232,10 +232,10 @@
   {
     "name": "Stealthy Approach Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 20,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -245,10 +245,10 @@
   {
     "name": "Into the Machine Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -258,10 +258,10 @@
   {
     "name": "High Class Heist Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -271,10 +271,10 @@
   {
     "name": "Fire Down Below Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -284,10 +284,10 @@
   {
     "name": "Cunning Disguise Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -297,10 +297,10 @@
   {
     "name": "Gunboat Graveyard Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 20,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -311,10 +311,10 @@
   {
     "name": "Rocky Start Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 40,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -324,10 +324,10 @@
   {
     "name": "Boneyard Casino Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 40,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -337,10 +337,10 @@
   {
     "name": "Straight to the Top Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 40,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -350,10 +350,10 @@
   {
     "name": "Two to Tango Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -363,10 +363,10 @@
   {
     "name": "Back Alley Heist Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -377,10 +377,10 @@
   {
     "name": "Dread Swamp Path Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 20,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -390,10 +390,10 @@
   {
     "name": "Lair of the Beast Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -403,10 +403,10 @@
   {
     "name": "Grave Undertaking Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 40,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -416,10 +416,10 @@
   {
     "name": "Descent into Danger Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 40,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -430,10 +430,10 @@
   {
     "name": "Perilous Ascent Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 30,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -443,10 +443,10 @@
   {
     "name": "Flaming Temple of Flame Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 25,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -456,10 +456,10 @@
   {
     "name": "Unseen Foe Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
-    "max_quantity": 25,
-    "increment": 1, //will this depend on bottle bundle size?
+    "max_quantity": 30,
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -469,10 +469,10 @@
   {
     "name": "Duel by the Dragon Bottle(s)",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add bottle image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 40,
-    "increment": 1, //will this depend on bottle bundle size?
+    "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
     "overlay_background": "#000000",
@@ -483,7 +483,7 @@
   {
     "name": "ToT Key",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add key image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
     "max_quantity": 7,
     "increment": 1,
@@ -498,9 +498,9 @@
   {
     "name": "Charm",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add junk item image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
-    "max_quantity": 100, //arbitrary number, adjust as needed
+    "max_quantity": 100,
     "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
@@ -511,9 +511,9 @@
   {
     "name": "1 Up",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add junk item image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
-    "max_quantity": 100, //arbitrary number, adjust as needed
+    "max_quantity": 100,
     "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
@@ -524,9 +524,9 @@
   {
     "name": "Ice Physics Trap",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add junk item image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
-    "max_quantity": 100, //arbitrary number, adjust as needed
+    "max_quantity": 100,
     "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
@@ -537,9 +537,9 @@
   {
     "name": "Speed Change Trap",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add junk item image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
-    "max_quantity": 100, //arbitrary number, adjust as needed
+    "max_quantity": 100,
     "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
@@ -550,9 +550,9 @@
   {
     "name": "Ball Trap",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add junk item image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
-    "max_quantity": 100, //arbitrary number, adjust as needed
+    "max_quantity": 100,
     "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,
@@ -563,9 +563,9 @@
   {
     "name": "Invisibility Trap",
     "type": "consumable",
-    "img": "images/items/consumable.png", //add junk item image later
+    "img": "images/items/consumable.png",
     "min_quantity": 0,
-    "max_quantity": 100, //arbitrary number, adjust as needed
+    "max_quantity": 100,
     "increment": 1,
     "decrement": 1,
     "initial_quantity": 0,

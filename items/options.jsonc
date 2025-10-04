@@ -92,18 +92,5 @@
         "allow_disabled": false,
         "overlay_background": "#000000",
         "codes": "opt_location_cluesanity_bundle_size"
-    },
-    {
-        "name": "Bosses Beaten",
-        "type": "consumable",
-        "img": "images/items/Clockwerk.png",
-        "min_quantity": 0,
-        "max_quantity": 4,
-        "increment": 1,
-        "initial_quantity": 0,
-        "allow_disabled": true,
-        "overlay_background": "#000000",
-        "overlay_font_size": 20,
-        "codes": "boss_beaten_count"
     }
 ]

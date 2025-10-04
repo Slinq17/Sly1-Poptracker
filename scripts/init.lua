@@ -6,7 +6,7 @@ local variant = Tracker.ActiveVariantUID
 -- check variant info
 IS_ITEMS_ONLY = variant:find("itemsonly")
 
-print("-- Example Tracker --")
+print("-- Sly 1 Tracker --")
 print("Loaded variant: ", variant)
 if ENABLE_DEBUG_LOG then
     print("Debug logging is enabled!")

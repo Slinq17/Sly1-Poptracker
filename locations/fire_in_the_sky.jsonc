@@ -11,21 +11,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
             "name": "Vault(5-7-8)",
-            "access_rules": ["perilous_ascent_bottle:30"],
+            "access_rules": ["$is_cluesanity_disabled", "perilous_ascent_bottle:30"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Fire in the Sky/Perilous Ascent/Key,@Fire in the Sky/Perilous Ascent/Vault(5-7-8)",
-              "opt_require_roll_no,@Fire in the Sky/Perilous Ascent/Key,@Fire in the Sky/Perilous Ascent/Vault(5-7-8)"
+              "$roll_required,progressive_roll:1,@Fire in the Sky/Perilous Ascent/Key,@Fire in the Sky/Perilous Ascent/Vault(5-7-8)",
+              "$roll_not_required,@Fire in the Sky/Perilous Ascent/Key,@Fire in the Sky/Perilous Ascent/Vault(5-7-8)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -48,21 +48,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 25
           },
           {
             "name": "Vault(9-3-2)",
-            "access_rules": ["flaming_temple_of_flame_bottle:25"],
+            "access_rules": ["$is_cluesanity_disabled", "flaming_temple_of_flame_bottle:25"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Fire in the Sky/Flaming Temple of Flame/Key,@Fire in the Sky/Flaming Temple of Flame/Vault(9-3-2)",
-              "opt_require_roll_no,@Fire in the Sky/Flaming Temple of Flame/Key,@Fire in the Sky/Flaming Temple of Flame/Vault(9-3-2)"
+              "$roll_required,progressive_roll:1,@Fire in the Sky/Flaming Temple of Flame/Key,@Fire in the Sky/Flaming Temple of Flame/Vault(9-3-2)",
+              "$roll_not_required,@Fire in the Sky/Flaming Temple of Flame/Key,@Fire in the Sky/Flaming Temple of Flame/Vault(9-3-2)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -85,21 +85,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
             "name": "Vault(6-6-7)",
-            "access_rules": ["unseen_foe_bottle:30"],
+            "access_rules": ["$is_cluesanity_disabled", "unseen_foe_bottle:30"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Fire in the Sky/Unseen Foe/Key,@Fire in the Sky/Unseen Foe/Vault(6-6-7)",
-              "opt_require_roll_no,@Fire in the Sky/Unseen Foe/Key,@Fire in the Sky/Unseen Foe/Vault(6-6-7)"
+              "$roll_required,progressive_roll:1,@Fire in the Sky/Unseen Foe/Key,@Fire in the Sky/Unseen Foe/Vault(6-6-7)",
+              "$roll_not_required,@Fire in the Sky/Unseen Foe/Key,@Fire in the Sky/Unseen Foe/Vault(6-6-7)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -173,21 +173,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 40
           },
           {
             "name": "Vault(2-3-1)",
-            "access_rules": ["duel_by_the_dragon_bottle:40"],
+            "access_rules": ["$is_cluesanity_disabled", "duel_by_the_dragon_bottle:40"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Fire in the Sky/Duel by the Dragon/Key,@Fire in the Sky/Duel by the Dragon/Vault(2-3-1)",
-              "opt_require_roll_no,@Fire in the Sky/Duel by the Dragon/Key,@Fire in the Sky/Duel by the Dragon/Vault(2-3-1)"
+              "$roll_required,progressive_roll:1,@Fire in the Sky/Duel by the Dragon/Key,@Fire in the Sky/Duel by the Dragon/Vault(2-3-1)",
+              "$roll_not_required,@Fire in the Sky/Duel by the Dragon/Key,@Fire in the Sky/Duel by the Dragon/Vault(2-3-1)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -207,7 +207,6 @@
         "sections": [
           {
             "name": "Panda King",
-            "hosted_item": "boss_beaten_count",
             "item_count": 1
           }
         ],

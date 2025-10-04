@@ -1,28 +1,12 @@
--- this is an example/default implementation for AP autotracking
--- it will use the mappings defined in item_mapping.lua and location_mapping.lua to track items and locations via their ids
--- it will also keep track of the current index of on_item messages in CUR_INDEX
--- addition it will keep track of what items are local items and which one are remote using the globals LOCAL_ITEMS and GLOBAL_ITEMS
--- this is useful since remote items will not reset but local items might
--- if you run into issues when touching A LOT of items/locations here, see the comment about Tracker.AllowDeferredLogicUpdate in autotracking.lua
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
--- used for hint tracking to quickly map hint status to a value from the Highlight enum
-HINT_STATUS_MAPPING = {}
-if Highlight then
-	HINT_STATUS_MAPPING = {
-		[20] = Highlight.Avoid,
-		[40] = Highlight.None,
-		[10] = Highlight.NoPriority,
-		[0] = Highlight.Unspecified,
-		[30] = Highlight.Priority,
-	}
-end
 
 CUR_INDEX = -1
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 SLOT_DATA = {}
 
+--useful for debugging slot data
 function dump_table(o, depth)
     if depth == nil then
         depth = 0
@@ -49,41 +33,20 @@ function isBottle(item_code)
 	return item_code == "" or item_code:sub(-#bottle) == bottle
 end
 
--- gets the data storage key for hints for the current player
--- returns nil when not connected to AP
-function getHintDataStorageKey()
-	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print("Tried to call getHintDataStorageKey while not connect to AP server")
-		end
-		return nil
-	end
-	return string.format("_read_hints_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
-end
-
 -- resets an item to its initial state
 function resetItem(item_code, item_type)
 	local obj = Tracker:FindObjectForCode(item_code)
 	if obj then
 		item_type = item_type or obj.Type
-		-- if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		-- 	print(string.format("resetItem: resetting item %s of type %s", item_code, item_type))
-		-- end
-		if item_type == "toggle" or item_type == "toggle_badged" then
+		if item_type == "toggle" then
 			obj.Active = false
-		elseif item_type == "progressive" or item_type == "progressive_toggle" then
+		elseif item_type == "progressive" then
 			obj.CurrentStage = 0
 			obj.Active = false
 		elseif item_type == "consumable" then
 			obj.AcquiredCount = 0
-		elseif item_type == "custom" then
-			-- your code for your custom lua items goes here
 		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("resetItem: tried to reset static item %s", item_code))
-		elseif item_type == "composite_toggle" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format(
-				"resetItem: tried to reset composite_toggle item %s but composite_toggle cannot be accessed via lua." ..
-				"Please use the respective left/right toggle item codes instead.", item_code))
 		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("resetItem: unknown item type %s for code %s", item_type, item_code))
 		end
@@ -100,9 +63,9 @@ function incrementItem(item_code, item_type, multiplier)
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("incrementItem: code: %s, type %s", item_code, item_type))
 		end
-		if item_type == "toggle" or item_type == "toggle_badged" then
+		if item_type == "toggle" then
 			obj.Active = true
-		elseif item_type == "progressive" or item_type == "progressive_toggle" then
+		elseif item_type == "progressive" then
 			if obj.Active then
 				obj.CurrentStage = obj.CurrentStage + 1
 			else
@@ -114,14 +77,6 @@ function incrementItem(item_code, item_type, multiplier)
 			else
 				obj.AcquiredCount = obj.AcquiredCount + obj.Increment
 			end
-		elseif item_type == "custom" then
-			-- your code for your custom lua items goes here
-		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("incrementItem: tried to increment static item %s", item_code))
-		elseif item_type == "composite_toggle" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format(
-				"incrementItem: tried to increment composite_toggle item %s but composite_toggle cannot be access via lua." ..
-				"Please use the respective left/right toggle item codes instead.", item_code))
 		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("incrementItem: unknown item type %s for code %s", item_type, item_code))
 		end
@@ -235,26 +190,43 @@ function onClear(slot_data)
 			end
 		end
 	end
+
+	-- set number of bottle bundles for each level if cluesanity is enabled
+	if slot_data["options"]["LocationCluesanityBundleSize"] > 0 then
+		local levels = {
+			"@Tide of Terror/Stealthy Approach/Bottle Bundle",
+			"@Tide of Terror/Into the Machine/Bottle Bundle",
+			"@Tide of Terror/High Class Heist/Bottle Bundle",
+			"@Tide of Terror/Fire Down Below/Bottle Bundle",
+			"@Tide of Terror/Cunning Disguise/Bottle Bundle",
+			"@Tide of Terror/Gunboat Graveyard/Bottle Bundle",
+			"@Sunset Snake Eyes/Rocky Start/Bottle Bundle",
+			"@Sunset Snake Eyes/Boneyard Casino/Bottle Bundle",
+			"@Sunset Snake Eyes/Straight to the Top/Bottle Bundle",
+			"@Sunset Snake Eyes/Two to Tango/Bottle Bundle",
+			"@Sunset Snake Eyes/Back Alley Heist/Bottle Bundle",
+			"@Vicious Voodoo/Dread Swamp Path/Bottle Bundle",
+			"@Vicious Voodoo/Lair of the Beast/Bottle Bundle",
+			"@Vicious Voodoo/Grave Undertaking/Bottle Bundle",
+			"@Vicious Voodoo/Descent into Danger/Bottle Bundle",
+			"@Fire in the Sky/Perilous Ascent/Bottle Bundle",
+			"@Fire in the Sky/Unseen Foe/Bottle Bundle",
+			"@Fire in the Sky/Flaming Temple of Flame/Bottle Bundle",
+			"@Fire in the Sky/Duel by the Dragon/Bottle Bundle"
+		}
+		for _,level in ipairs(levels) do
+			local levelBundles = Tracker:FindObjectForCode(level)
+			local levelBottles = levelBundles.AvailableChestCount
+			levelBundles.AvailableChestCount = levelBundles.AvailableChestCount // slot_data["options"]["LocationCluesanityBundleSize"]
+			if levelBottles % slot_data["options"]["LocationCluesanityBundleSize"] ~= 0 then
+				levelBundles.AvailableChestCount = levelBundles.AvailableChestCount + 1
+			end
+		end
+	end
 	apply_slot_data(slot_data)
 	SLOT_DATA = slot_data
-	-- print(string.format("options %s", SLOT_DATA.options.ItemCluesanityBundleSize))
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
-	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions here
-	end
-	-- setup data storage tracking for hint tracking
-	local data_strorage_keys = {}
-	if PopVersion >= "0.32.0" then
-		data_strorage_keys = { getHintDataStorageKey() }
-	end
-	-- subscribes to the data storage keys for updates
-	-- triggers callback in the SetNotify handler on update
-	Archipelago:SetNotify({"Slot: " .. Archipelago.PlayerNumber .. " :CurrentWorld"})
-	-- gets the current value for the data storage keys
-	-- triggers callback in the Retrieved handler when result is received
-	--Archipelago:Get(data_strorage_keys)
 	Tracker.BulkUpdate = false
 end
 
@@ -283,9 +255,6 @@ function onItem(index, item_id, item_name, player_number)
 			local item_code = item_table[1]
 			local item_type = item_table[2]
 			local multiplier = item_table[3] or 1
-			print(string.format("item_code: %s", item_table[1]))
-			print(string.format("item_type: %s", item_table[2]))
-			print(string.format("multiplier: %s", item_table[3]))
 			if item_code then
 				incrementItem(item_code, item_type, multiplier)
 				-- keep track which items we touch are local and which are global
@@ -312,10 +281,6 @@ function onItem(index, item_id, item_name, player_number)
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 		print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
 		print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
-	end
-	-- track local items via snes interface
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions for local item tracking here
 	end
 end
 
@@ -347,8 +312,6 @@ function onLocation(location_id, location_name)
 							else
 								obj.AvailableChestCount = obj.AvailableChestCount - SLOT_DATA.options.LocationCluesanityBundleSize
 							end
-						elseif location_code == "@Tide of Terror/Eye of the Storm/Raleigh" or location_code == "@Sunset Snake Eyes/Last Call/Muggshot" or location_code == "@Vicious Voodoo/Deadly Dance/Ms. Ruby" or location_code == "@Fire in the Sky/Flame Fu!/Panda King" then
-							incrementItem("boss_beaten_count")
 						else 
 							obj.AvailableChestCount = obj.AvailableChestCount - 1
 						end
@@ -369,136 +332,6 @@ function onLocation(location_id, location_name)
 	end
 end
 
--- called when a locations is scouted
-function onScout(location_id, location_name, item_id, item_name, item_player)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("called onScout: %s, %s, %s, %s, %s", location_id, location_name, item_id, item_name,
-			item_player))
-	end
-	-- not implemented yet :(
-end
-
--- called when a bounce message is received
-function onBounce(json)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("called onBounce: %s", dump_table(json)))
-	end
-	-- your code goes here
-end
-
--- called whenever Archipelago:Get returns data from the data storage or
--- whenever a subscribed to (via Archipelago:SetNotify) key in data storgae is updated
--- oldValue might be nil (always nil for "_read" prefixed keys and via retrieved handler (from Archipelago:Get))
-function onDataStorageUpdate(key, value, oldValue)
-	--if you plan to only use the hints key, you can remove this if
-	if key == getHintDataStorageKey() then
-		onHintsUpdate(value)
-	end
-end
-
--- called whenever the hints key in data storage updated
--- NOTE: this should correctly handle having multiple mapped locations in a section.
---       if you only map sections 1 to 1 you can simplfy this. for an example see
---       https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/scripts/autotracking/archipelago.lua
-function onHintsUpdate(hints)
-	-- Highlight is only supported since version 0.32.0
-	if PopVersion < "0.32.0" or not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
-		return
-	end
-	local player_number = Archipelago.PlayerNumber
-	-- get all new highlight values per section
-	local sections_to_update = {}
-	for _, hint in ipairs(hints) do
-		-- we only care about hints in our world
-		if hint.finding_player == player_number then
-			updateHint(hint, sections_to_update)
-		end
-	end
-	-- update the sections
-	for location_code, highlight_code in pairs(sections_to_update) do
-		-- find the location object
-		local obj = Tracker:FindObjectForCode(location_code)
-		-- check if we got the location and if it supports Highlight
-		if obj and obj.Highlight then
-			obj.Highlight = highlight_code
-		end
-	end
-end
-
--- update section highlight based on the hint
-function updateHint(hint, sections_to_update)
-	-- get the highlight enum value for the hint status
-	local hint_status = hint.status
-	local highlight_code = nil
-	if hint_status then
-		highlight_code = HINT_STATUS_MAPPING[hint_status]
-	end
-	if not highlight_code then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("updateHint: unknown hint status %s for hint on location id %s", hint.status,
-				hint.location))
-		end
-		-- try to "recover" by checking hint.found (older AP versions without hint.status)
-		if hint.found == true then
-			highlight_code = Highlight.None
-		elseif hint.found == false then
-			highlight_code = Highlight.Unspecified
-		else
-			return
-		end
-	end
-	-- get the location mapping for the location id
-	local mapping_entry = LOCATION_MAPPING[hint.location]
-	if not mapping_entry then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("updateHint: could not find location mapping for id %s", hint.location))
-		end
-		return
-	end
-	--get the "highest" highlight value pre section
-	for _, location_table in pairs(mapping_entry) do
-		if location_table then
-			local location_code = location_table[1]
-			-- skip hosted items, they don't support Highlight
-			if location_code and location_code:sub(1, 1) == "@" then
-				-- see if we already set a Highlight for this section
-				local existing_highlight_code = sections_to_update[location_code]
-				if existing_highlight_code then
-					-- make sure we only replace None or "increase" the highlight but never overwrite with None
-					-- this so sections with mulitple mapped locations show the "highest" Highlight and
-					-- only show no Highlight when all hints are found
-					if existing_highlight_code == Highlight.None or (existing_highlight_code < highlight_code and highlight_code ~= Highlight.None) then
-						sections_to_update[location_code] = highlight_code
-					end
-				else
-					sections_to_update[location_code] = highlight_code
-				end
-			end
-		end
-	end
-end
-
-function onChangedRegion(key, current_region, old_region)
-	print("Key: " .. key)
-	print("Current: " .. current_region)
-	print("Old: " .. old_region)
-	-- regioninfo = current_region
-    -- if (current_region ~= old_region) then
-	-- 	-- print("Key: " .. key)
-	-- 	-- print("Current: " .. current_region)
-	-- 	-- print("Old: " .. old_region)
-    --     if TABS_MAPPING[current_region] then
-    --         CURRENT_ROOM = TABS_MAPPING[current_region]
-	-- 		print("First Option")
-    --     else
-    --         CURRENT_ROOM = CURRENT_ROOM_ADDRESS
-	-- 		print("Second Option")
-    --     end
-    --         print("Switching tab to " .. CURRENT_ROOM)
-    --     Tracker:UiHint("ActivateTab", CURRENT_ROOM)
-    -- end
-end
-
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
@@ -508,27 +341,3 @@ end
 if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 	Archipelago:AddLocationHandler("location handler", onLocation)
 end
---Archipelago:AddRetrievedHandler("retrieved handler", onDataStorageUpdate)
-Archipelago:AddSetReplyHandler("CurrentWorld", onChangedRegion)
--- Archipelago:AddScoutHandler("scout handler", onScout)
--- Archipelago:AddBouncedHandler("bounce handler", onBounce)
-
--- called onClear, slot_data:
--- {
---         ["Seed"] = 80929705849360331811,
---         ["options"] = {
---                 ["RequiredBosses"] = 4,
---                 ["UnlockClockwerk"] = 2,
---                 ["AvoidEarlyBK"] = 0,
---                 ["StartingEpisode"] = Sunset Snake Eyes,
---                 ["FastClockwerk"] = 1,
---                 ["MaxPages"] = 25,
---                 ["ItemCluesanityBundleSize"] = 5,
---                 ["RequiredPages"] = 20,
---                 ["LocationCluesanityBundleSize"] = 5,
---                 ["HourglassesRequireRoll"] = 0,
---                 ["IncludeHourglasses"] = 1,
---         },
---         ["Slot"] = Slinq,
---         ["TotalLocations"] = 195,
--- }

@@ -1,7 +1,14 @@
-function has_pages()
-    return Tracker:FindObjectForCode("opt_unlock_clockwerk_pages") and Tracker:ProviderCountForCode("thievius_raccoonus_page") >= Tracker:ProviderCountForCode("opt_required_pages")
+-- logic functions for the tracker
+
+--function to check if location cluesanity is disabled
+function is_cluesanity_disabled()
+    return Tracker:FindObjectForCode("opt_location_cluesanity_bundle_size").AcquiredCount < 1
 end
 
-function has_bosses()
-    return Tracker:FindObjectForCode("opt_unlock_clockwerk_bosses") and Tracker:ProviderCountForCode("boss_beaten_count") >= Tracker:ProviderCountForCode("opt_required_bosses")
+--function to check if roll is required for hourglasses
+function roll_required()
+    return Tracker:FindObjectForCode("opt_require_roll").CurrentStage == 1
+end
+function roll_not_required()
+    return Tracker:FindObjectForCode("opt_require_roll").CurrentStage == 0
 end

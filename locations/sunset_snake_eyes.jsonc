@@ -18,21 +18,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 40
           },
           {
             "name": "Vault(3-1-4)",
-            "access_rules": ["rocky_start_bottle:40"],
+            "access_rules": ["$is_cluesanity_disabled", "rocky_start_bottle:40"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Sunset Snake Eyes/Rocky Start/Key,@Sunset Snake Eyes/Rocky Start/Vault(3-1-4)",
-              "opt_require_roll_no,@Sunset Snake Eyes/Rocky Start/Key,@Sunset Snake Eyes/Rocky Start/Vault(3-1-4)"
+              "$roll_required,progressive_roll:1,@Sunset Snake Eyes/Rocky Start/Key,@Sunset Snake Eyes/Rocky Start/Vault(3-1-4)",
+              "$roll_not_required,@Sunset Snake Eyes/Rocky Start/Key,@Sunset Snake Eyes/Rocky Start/Vault(3-1-4)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -55,21 +55,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 40
           },
           {
             "name": "Vault(3-3-8)",
-            "access_rules": ["boneyard_casino_bottle:40"],
+            "access_rules": ["$is_cluesanity_disabled", "boneyard_casino_bottle:40"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Sunset Snake Eyes/Boneyard Casino/Key,@Sunset Snake Eyes/Boneyard Casino/Vault(3-3-8)",
-              "opt_require_roll_no,@Sunset Snake Eyes/Boneyard Casino/Key,@Sunset Snake Eyes/Boneyard Casino/Vault(3-3-8)"
+              "$roll_required,progressive_roll:1,@Sunset Snake Eyes/Boneyard Casino/Key,@Sunset Snake Eyes/Boneyard Casino/Vault(3-3-8)",
+              "$roll_not_required,@Sunset Snake Eyes/Boneyard Casino/Key,@Sunset Snake Eyes/Boneyard Casino/Vault(3-3-8)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -126,21 +126,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 40
           },
           {
             "name": "Vault(4-6-8)",
-            "access_rules": ["straight_to_top_bottle:40"],
+            "access_rules": ["$is_cluesanity_disabled", "straight_to_the_top_bottle:40"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Sunset Snake Eyes/Straight to the Top/Key,@Sunset Snake Eyes/Straight to the Top/Vault(4-6-8)",
-              "opt_require_roll_no,@Sunset Snake Eyes/Straight to the Top/Key,@Sunset Snake Eyes/Straight to the Top/Vault(4-6-8)"
+              "$roll_required,progressive_roll:1,@Sunset Snake Eyes/Straight to the Top/Key,@Sunset Snake Eyes/Straight to the Top/Vault(4-6-8)",
+              "$roll_not_required,@Sunset Snake Eyes/Straight to the Top/Key,@Sunset Snake Eyes/Straight to the Top/Vault(4-6-8)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -163,21 +163,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
             "name": "Vault(5-3-2)",
-            "access_rules": ["two_to_tango_bottle:30"],
+            "access_rules": ["$is_cluesanity_disabled", "two_to_tango_bottle:30"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Sunset Snake Eyes/Two to Tango/Key,@Sunset Snake Eyes/Two to Tango/Vault(5-3-2)",
-              "opt_require_roll_no,@Sunset Snake Eyes/Two to Tango/Key,@Sunset Snake Eyes/Two to Tango/Vault(5-3-2)"
+              "$roll_required,progressive_roll:1,@Sunset Snake Eyes/Two to Tango/Key,@Sunset Snake Eyes/Two to Tango/Vault(5-3-2)",
+              "$roll_not_required,@Sunset Snake Eyes/Two to Tango/Key,@Sunset Snake Eyes/Two to Tango/Vault(5-3-2)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -200,21 +200,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
             "name": "Vault(5-6-5)",
-            "access_rules": ["back_alley_heist_bottle:30"],
+            "access_rules": ["$is_cluesanity_disabled", "back_alley_heist_bottle:30"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Sunset Snake Eyes/Back Alley Heist/Key,@Sunset Snake Eyes/Back Alley Heist/Vault(5-6-5)",
-              "opt_require_roll_no,@Sunset Snake Eyes/Back Alley Heist/Key,@Sunset Snake Eyes/Back Alley Heist/Vault(5-6-5)"
+              "$roll_required,progressive_roll:1,@Sunset Snake Eyes/Back Alley Heist/Key,@Sunset Snake Eyes/Back Alley Heist/Vault(5-6-5)",
+              "$roll_not_required,@Sunset Snake Eyes/Back Alley Heist/Key,@Sunset Snake Eyes/Back Alley Heist/Vault(5-6-5)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -234,7 +234,6 @@
         "sections": [
           {
             "name": "Muggshot",
-            "hosted_item": "boss_beaten_count",
             "item_count": 1
           }
         ],

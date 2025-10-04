@@ -11,21 +11,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 20
           },
           {
             "name": "Vault(5-8-8)",
-            "access_rules": ["dread_swamp_path_bottle:20"],
+            "access_rules": ["$is_cluesanity_disabled", "dread_swamp_path_bottle:20"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Vicious Voodoo/Dread Swamp Path/Key,@Vicious Voodoo/Dread Swamp Path/Vault(5-8-8)",
-              "opt_require_roll_no,@Vicious Voodoo/Dread Swamp Path/Key,@Vicious Voodoo/Dread Swamp Path/Vault(5-8-8)"
+              "$roll_required,progressive_roll:1,@Vicious Voodoo/Dread Swamp Path/Key,@Vicious Voodoo/Dread Swamp Path/Vault(5-8-8)",
+              "$roll_not_required,@Vicious Voodoo/Dread Swamp Path/Key,@Vicious Voodoo/Dread Swamp Path/Vault(5-8-8)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -48,21 +48,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 30
           },
           {
             "name": "Vault(4-4-4)",
-            "access_rules": ["lair_of_the_beast_bottle:30"],
+            "access_rules": ["$is_cluesanity_disabled", "lair_of_the_beast_bottle:30"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Vicious Voodoo/Lair of the Beast/Key,@Vicious Voodoo/Lair of the Beast/Vault(4-4-4)",
-              "opt_require_roll_no,@Vicious Voodoo/Lair of the Beast/Key,@Vicious Voodoo/Lair of the Beast/Vault(4-4-4)"
+              "$roll_required,progressive_roll:1,@Vicious Voodoo/Lair of the Beast/Key,@Vicious Voodoo/Lair of the Beast/Vault(4-4-4)",
+              "$roll_not_required,@Vicious Voodoo/Lair of the Beast/Key,@Vicious Voodoo/Lair of the Beast/Vault(4-4-4)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -85,21 +85,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "clear_as_group": false,
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "item_count": 40
           },
           {
             "name": "Vault(1-2-8)",
-            "access_rules": ["grave_undertaking_bottle:40"],
+            "access_rules": ["$is_cluesanity_disabled", "grave_undertaking_bottle:40"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Vicious Voodoo/Grave Undertaking/Key,@Vicious Voodoo/Grave Undertaking/Vault(1-2-8)",
-              "opt_require_roll_no,@Vicious Voodoo/Grave Undertaking/Key,@Vicious Voodoo/Grave Undertaking/Vault(1-2-8)"
+              "$roll_required,progressive_roll:1,@Vicious Voodoo/Grave Undertaking/Key,@Vicious Voodoo/Grave Undertaking/Vault(1-2-8)",
+              "$roll_not_required,@Vicious Voodoo/Grave Undertaking/Key,@Vicious Voodoo/Grave Undertaking/Vault(1-2-8)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -173,21 +173,21 @@
             "item_count": 1
           },
           {
-            "name": "Bottles",
+            "name": "Bottle Bundle",
             "visibility_rules": ["opt_location_cluesanity_bundle_size:1"],
             "clear_as_group": false,
             "item_count": 40
           },
           {
             "name": "Vault(5-7-1)",
-            "access_rules": ["descent_into_danger_bottle:40"],
+            "access_rules": ["$is_cluesanity_disabled", "descent_into_danger_bottle:40"],
             "item_count": 1
           },
           {
             "name": "Hourglass",
             "access_rules": [
-              "opt_require_roll_yes,progressive_roll:1,@Vicious Voodoo/Descent into Danger/Key,@Vicious Voodoo/Descent into Danger/Vault(5-7-1)",
-              "opt_require_roll_no,@Vicious Voodoo/Descent into Danger/Key,@Vicious Voodoo/Descent into Danger/Vault(5-7-1)"
+              "$roll_required,progressive_roll:1,@Vicious Voodoo/Descent into Danger/Key,@Vicious Voodoo/Descent into Danger/Vault(5-7-1)",
+              "$roll_not_required,@Vicious Voodoo/Descent into Danger/Key,@Vicious Voodoo/Descent into Danger/Vault(5-7-1)"
             ],
             "visibility_rules": ["opt_hourglasses_yes"],
             "item_count": 1
@@ -207,7 +207,6 @@
         "sections": [
           {
             "name": "Ms. Ruby",
-            "hosted_item": "boss_beaten_count",
             "item_count": 1
           }
         ],
